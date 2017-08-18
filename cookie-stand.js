@@ -16,7 +16,7 @@ locationOne.cookiesPerHour = function () {
     locationOne.cookiesSold.push (cookiesSold);
     }
 
-}
+};
 
 /*Location Two - PA*/
 var locationTwo = new Object ();
@@ -36,7 +36,7 @@ locationTwo.cookiesPerHour = function () {
     locationTwo.cookiesSold.push (cookiesSold);
     }
 
-}
+};
 
 /*Location Three - WS*/
 var locationThree = new Object ();
@@ -56,7 +56,7 @@ locationThree.cookiesPerHour = function () {
     locationThree.cookiesSold.push (cookiesSold);
     }
 
-}
+};
 
 /*Location Four - Sellwood*/
 var locationFour = new Object ();
@@ -76,7 +76,7 @@ locationFour.cookiesPerHour = function () {
     locationFour.cookiesSold.push (cookiesSold);
     }
 
-}
+};
 
 /*Location Five - PD*/
 var locationFive = new Object ();
@@ -96,7 +96,7 @@ locationFive.cookiesPerHour = function () {
     locationFive.cookiesSold.push (cookiesSold);
     }
 
-}
+};
 
 var time = [
   '10am: ',
@@ -114,21 +114,27 @@ locationOne.cookiesPerHour ();
 for (var index = 0; index < time.length; index++){
   document.getElementById('psTime').innerHTML += "<li>" + time[index] +locationOne.cookiesSold[index] + "</li>"
 }
+
 document.getElementById('portlandAirport').innerHTML = locationTwo.name;
-locationOne.cookiesPerHour ();
+locationTwo.cookiesPerHour ();
 for (var index = 0; index < time.length; index++){
   document.getElementById('paTime').innerHTML += "<li>" + time[index] +locationTwo.cookiesSold[index] + "</li>"
 }
-document.getElementById('washingtonSquare').innerHTML = locationThree.name;
-for (var index = 0; index < time.length; index++) {
-  document.getElementById('waTime').innerHTML += "<li>" + time [index] +locationThree.cookiesSold[index] + "</li>"
 
+document.getElementById('washingtonSquare').innerHTML = locationThree.name;
+locationThree.cookiesPerHour();
+for (var index = 0; index < time.length; index++){
+  document.getElementById('waTime').innerHTML += "<li>" + time[index] +locationThree.cookiesSold[index] + "</li>"
 }
+
 document.getElementById('sellwood').innerHTML = locationFour.name;
-for(var index = 0; index < time.length; index++) {
-  document.getElementById('swTime').innerHTML += "<li>" + time [index] +locationFour.cookiesSold[index] + "</li>"
+locationFour.cookiesPerHour();
+for (var index = 0; index < time.length; index++){
+  document.getElementById('swTime').innerHTML += "<li>" + time[index] +locationFour.cookiesSold[index] + "</li>"
 }
+
 document.getElementById('pearlDistrict').innerHTML = locationFive.name;
-for (var index = 0; index < time.length; index++) {
-  document.getElementById('pdTime').innterHTML += "<li>" + time[index] +locationFive.cookiesSold[index] + "</li>"
+locationFive.cookiesPerHour();
+for (var index = 0; index < time.length; index++){
+  document.getElementById('pdTime').innerHTML += "<li>" + time[index] +locationFive.cookiesSold[index] + "</li>"
 }
