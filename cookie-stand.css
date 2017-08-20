@@ -13,10 +13,12 @@ body {
 p {
   font-family: Georgia;
 }
-h2 {
+h1, h2 {
   color: salmon;
-  weight: bolder;
+  /*weight: bolder;*/
+  font-family: 'Raleway', sans-serif;
 }
+
 
 /*Highlights*/
 font-family: 'Raleway', sans-serif;
