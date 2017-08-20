@@ -16,7 +16,7 @@ locationOne.cookiesPerHour = function () {
     locationOne.cookiesSold.push (cookiesSold);
     }
 
-}
+} 
 
 /*Location Two - PA*/
 var locationTwo = new Object ();
