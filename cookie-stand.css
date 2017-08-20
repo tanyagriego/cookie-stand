@@ -13,10 +13,22 @@ body {
 p {
   font-family: Georgia;
 }
-h1, h2 {
+h2 {
   color: salmon;
-  /*weight: bolder;*/
   font-family: 'Raleway', sans-serif;
+}
+
+aside.ad {
+  border: 1px solid black;
+  background-color: salmon;
+}
+
+aside {
+display: in-line block;
+vertical-align: top;
+width: 19%
+
+
 }
 
 
