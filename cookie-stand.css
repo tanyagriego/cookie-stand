@@ -1,5 +1,5 @@
 /*Data*/
-ul {
+th {
 font-family: arial;
 color: Black;
 
@@ -13,7 +13,7 @@ body {
 p {
   font-family: Georgia;
 }
-h2 {
+th {
   color: salmon;
   font-family: 'Raleway', sans-serif;
 }
