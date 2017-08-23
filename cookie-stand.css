@@ -1,10 +1,4 @@
 /*Data*/
-th {
-font-family: arial;
-color: Black;
-
-}
-
 body {
   background: beige;
 }
@@ -13,10 +7,32 @@ body {
 p {
   font-family: Georgia;
 }
+
+/*Table*/
+table {
+  width: 600px;
+}
+
+th, td {
+  padding: 7px 10px 10px 10px;
+}
+
 th {
   color: salmon;
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid #111111;
+  border-top: 1px solid #999;
+  text-align: left;
 }
+
+tr.even {
+  background-color: #efefef;
+}
+tr.hover {
+  background-color: #c3e6e5;
+}
+
 
 aside.ad {
   border: 1px solid black;
