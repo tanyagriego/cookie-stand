@@ -1,8 +1,27 @@
 /*Data*/
 body {
   background: beige;
+  font-family: 'Raleway', sans-serif;
 }
 
+h1 {
+  color: brown;
+  text-align: center;
+  /*background-image: url(http://i.imgur.com/DV2O1iy.jpg);*/
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+h5 {
+  font-family: Georgia;
+  color: brown;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: salmon;
+}
 /*Text*/
 p {
   font-family: Georgia;
