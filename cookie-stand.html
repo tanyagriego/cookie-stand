@@ -12,8 +12,8 @@
   <tbody id="storeLocation-table">
     <tr>
       <th>Name</th>
-      <th>Max Customer</th>
       <th>Min Customer</th>
+      <th>Max Customer</th>
       <th>Average Customer</th>
       <th>10am</th>
       <th>11am</th>
@@ -27,44 +27,19 @@
     </tr>
   </tbody>
 </table>
-
-<!-- Location One - Pioneer Square-->
-  <!-- <section>
-    <h2 id = "pioneerSquare"> </h2>
-    <ul id = "psTime"> </ul>
-  </section> -->
-
-<!-- Location Two - Portland Airport -->
-  <!-- <section>
-    <h2 id = "portlandAirport"> </h2>
-    <ul id = "paTime"> </ul>
-  </section> -->
-
-<!-- Location Three - Washington Square -->
-  <!-- <section>
-    <h2 id = "washingtonSquare"> </h2>
-    <ul id = "waTime"> </ul>
-  </section> -->
-
-<!-- Location Four - Sellwood -->
-  <!-- <section>
-    <h2 id = "sellwood"> </h2>
-    <ul id = "swTime"> </ul>
-  </section> -->
-
-<!-- Location Five - Pearl District -->
-  <!-- <section>
-    <h2 id = "pearlDistrict"> </h2>
-    <ul id = "pdTime"> </ul>
-  </section> -->
-
-
-
-
-
-
-
-
+<br><br><br><br><br>
+<form name="newStoreForm">
+  <label>Store Name</lable>
+    <input name="storeName"><br>
+    <label>Min. Customers</label>
+    <input name="minCustomers"><br>
+    <label>Max. Customers</label>
+    <input name="maxCustomers"><br>
+    <label>Avg. Customers</label>
+    <input name="avgCustomers"><br>
+    <!-- <label>Min. Customers</label> -->
+    <input type="button" value="Add Store" onclick="showData()">
+  </form>
 
 <script type="text/javascript" src="cookie-stand.js"></script>
 <br>
@@ -76,7 +51,7 @@
 <br>
 <br>
 <footer>
-  &copy;2017 Tanya Griego
+  &copy;2017 Mmm... Cookies
 </footer>
 
 </body>

@@ -48,15 +48,33 @@ function StoreDetails (name, min, max, average) {
 };
 
 var storeLocation = [];
-storeLocation.push(new StoreDetails ("Pioneer Square", 17, 88, 5.2, 0));
-storeLocation.push(new StoreDetails ("Portland Airport", 6, 24, 1.2, 0));
-storeLocation.push(new StoreDetails ("Washington Square", 11, 38, 1.9, 0));
-storeLocation.push(new StoreDetails ("Sellwood", 20, 48, 3.3, 0));
-storeLocation.push(new StoreDetails ("Pearl District", 3, 24, 2.6, 0));
+storeLocation.push(new StoreDetails ("Pioneer Square", 17, 88, 5.2));
+storeLocation.push(new StoreDetails ("Portland Airport", 6, 24, 1.2));
+storeLocation.push(new StoreDetails ("Washington Square", 11, 38, 1.9));
+storeLocation.push(new StoreDetails ("Sellwood", 20, 48, 3.3));
+storeLocation.push(new StoreDetails ("Pearl District", 3, 24, 2.6));
 
 var tableBody =
 document.getElementById("storeLocation-table");
 for(var index = 0; index < storeLocation.length; index ++) {
   storeLocation[index].cookiesPerHour ();
   tableBody.appendChild(storeLocation[index].getTableRowInfo());
+}
+
+function showData() {
+  var form = document.forms['newStoreForm'];
+  var newName = form.elements['storeName'];
+  var minCustomers = form.elements['minCustomers'];
+  var maxCustomers = form.elements ['maxCustomers'];
+  var avgCustomers = form.elements ['avgCustomers'];
+  var message = "New Store:";
+  message += "\n Name: "+newName.value;
+  message += "\n Min: "+minCustomers.value;
+  message += "\n Max: "+maxCustomers.value;
+  message += "\n Avg: "+avgCustomers.value;
+  newStore = new StoreDetails (newName.value, parseInt(minCustomers.value), parseInt(maxCustomers.value), parseFloat(avgCustomers.value));
+  storeLocation.push(newStore);
+  newStore.cookiesPerHour ();
+  tableBody.appendChild(newStore.getTableRowInfo());
+
 }
